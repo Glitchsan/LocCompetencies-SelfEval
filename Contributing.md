@@ -70,16 +70,6 @@ When localizing for a specific market, consider that color meanings and design p
 }
 ```
 
-**Example for an academic institution:**
-```css
-:root {
-    --primary-color: #003366;      /* University blue */
-    --secondary-color: #0055A4;      
-    --accent-color: #FFB81C;       /* School gold */
-    --success-color: #00A651;        
-}
-```
-
 **2. Typography** - Adjust fonts if needed for your target language/script:
 ```css
 --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
