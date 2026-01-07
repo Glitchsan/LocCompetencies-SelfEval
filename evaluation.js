@@ -442,7 +442,8 @@ function setupEventHandlers(strings) {
                 language: 3,
                 research: 3,
                 gilt: 3,
-                technology: 3
+                technology: 3,
+                management: 3
             }
         },
         'qa_tester': {
@@ -450,8 +451,10 @@ function setupEventHandlers(strings) {
             requirements: {
                 language: 3,
                 research: 3,
+                market: 3,
                 gilt: 3,
-                technology: 3
+                technology: 3,
+                management: 3
             }
         },
         'data_annotator': {
@@ -459,8 +462,10 @@ function setupEventHandlers(strings) {
             requirements: {
                 language: 3,
                 research: 3,
+                market: 3,
                 subject: 3,
-                technology: 3
+                technology: 3,
+                management: 3
             }
         },
         // Mid-level and senior roles
@@ -511,8 +516,10 @@ function setupEventHandlers(strings) {
                 language: 3,
                 market: 3,
                 subject: 3,
+                research: 4,
                 gilt: 4,
                 technology: 4,
+                management: 3
             }
         },
         'quality_manager': {
@@ -542,7 +549,7 @@ function setupEventHandlers(strings) {
         'localization_trainer': {
             name: getNestedProperty(strings, 'careerPaths.localization_trainer') || 'Localization Trainer',
             requirements: {
-                language: 3,
+                language: 4,
                 research: 5,
                 market: 4,
                 subject: 4,
@@ -1016,4 +1023,5 @@ function setupEventHandlers(strings) {
 // IMPORTANT: This must be done AFTER the functions are defined
 window.buildEvaluationSection = buildEvaluationSection;
 window.buildResultsSection = buildResultsSection;
+
 window.setupEventHandlers = setupEventHandlers;
