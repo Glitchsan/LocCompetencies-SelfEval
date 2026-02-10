@@ -37,7 +37,7 @@
         
         // CONFIGURATION: Set to true to show "coming soon" message for Spanish
         // Set to false when Spanish localization is complete and ready to use
-        const SPANISH_COMING_SOON = true;
+        const SPANISH_COMING_SOON = false;
         
         // Check if Spanish is selected and show localization activity message
         if (language === 'es-MX' && SPANISH_COMING_SOON) {
@@ -223,14 +223,8 @@
           mainContent.style.visibility = 'hidden';
         }
         
-        // Load CSS
-        this.loadCSS('locessential-styles.css')
-          .then(() => {
-            this.registerResource('styles');
-          })
-          .catch(() => {
-            this.registerResource('styles'); // Register anyway
-          });
+        // CSS is loaded directly in HTML, mark as loaded
+        this.registerResource('styles');
         
         // Load language strings
         this.loadLanguageStrings();

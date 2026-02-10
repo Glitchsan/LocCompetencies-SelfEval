@@ -39,12 +39,14 @@ The [Localization Management Core Competencies (LMCC) typology](https://l10ncomp
 
 ### Installation
 
-1. Clone this repository:
+1. Fork this repository
+
+2. Clone the forked repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/lmcc-self-evaluation.git
+git clone https://github.com/your username/LocCompetencies-SelfEval.git
 ```
 
-2. Open `LocCompetencies_en-US.html` in your web browser
+3. Open `index.html` in your web browser locally using Live Preview
 
 That's it! No build process or dependencies required.
 
@@ -59,22 +61,42 @@ This project is designed to be localized into multiple languages. Currently avai
 1. Fork this repository
 2. Copy `strings_en-us.json` and rename it to your target locale (e.g., `strings_es-mx.json`)
 3. Translate all strings in the JSON file
-4. Copy `LocCompetencies_en-US.html` and rename it to match your locale (e.g., `LocCompetencies_es-MX.html`)
+4. Copy `index.html` and name the new file to match your locale (e.g., `LocCompetencies_es-MX.html`)
 5. Update the `<html lang="">` attribute and file references
 6. Test thoroughly
 7. Submit a pull request!
 
 For students in the Website Localization class: Spanish localization will be assigned as a hands-on project to practice real-world localization workflows.
 
+### Scoring Logic
+
+The scoring logic that is implemented to determine the career paths recommended is found in: `career-paths-config.json`
+Though you do not need to make any changes to that file, we recommend that you review the scoring logic. Of course, you're free to make any adjustments that you believe are needed to make the scoring logic more accurate.
+
+### CSS Styling
+
+This repo contains two style sheets that reflect the styles of two brands: LocEssentials and UIC.
+Switch between loading one style sheet or the other by updating this line in the html files:
+
+```
+<link rel="stylesheet" href="locessential-styles.css">
+```
+
+Experiment with adjusting the styles provided, or create your own brand new style sheet.
+
 ## Project Structure
 
 ```
 .
-├── LocCompetencies_en-US.html    # Main HTML file (English)
-├── strings_en-us.json                     # English language strings
-├── evaluation.js                  # Core application logic
+├── index.html                     # Main HTML file (English)
+├── LocCompetencies_es-MX.html     # Spanish HTML file (To be created by localizer)
+├── strings_en-us.json             # English language strings
+├── strings_es-mx.json             # Spanish language strings (To be created by localizer)
+├── career-paths-config.json       # Scoring logic
 ├── resource-loader.js             # Resource loading and language switching
-├── locessential-styles.css        # Styling
+├── evaluation.js                  # Core application logic
+├── locessential-styles.css        # LocEssentials brand styling
+├── estilos-uic.css                # UIC styling
 ├── README.md                      # This file
 └── LICENSE                        # MIT License
 ```
@@ -88,7 +110,7 @@ For students in the Website Localization class: Spanish localization will be ass
 
 ## Contributing
 
-Contributions are welcome! Here are some ways you can help:
+Contributions are welcome through pull requests to the main repo! Here are some ways you can help:
 
 - **Localization**: Translate the tool into new languages
 - **Bug fixes**: Report or fix any issues you find
@@ -101,14 +123,18 @@ This project is ideal for teaching:
 - Website localization workflows
 - JSON-based localization
 - Git/GitHub collaboration
-- HTML/CSS/JavaScript basics
-- Quality assurance in localization
+- HTML/CSS translation and localization
+- Localization Quality Assurance (LQA)
 
 Feel free to fork this project for your classroom activities!
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+LocEssentials retains the copyright of the English contents of the repo.
+
+We encourage you to credit yourself for producing the localization. You'll find an area in the repo where you can uncomment the attribution text.
 
 ## Credits
 
